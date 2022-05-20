@@ -1,0 +1,30 @@
+algoritmo "AptoParaDirigir"
+var
+   anoAtual, anoNasc, idade: inteiro
+inicio
+   escreval("------------------------")
+   escrevaL("DEPARTAMENTO DE TRANSITO")
+   escreval("------------------------")
+   
+   //SOLICITANDO DADOS
+   escreva("Ano Atual(yyyy): ")
+   leia(anoAtual)
+   escreva("Ano de Nascimento(yyyy): ")
+   leia(anoNasc)
+   
+   //CALCULANDO IDADE
+   idade <- anoAtual - anoNasc
+   
+   //EXIBINDO RESULTADOS
+   escreval("-------STATUS------------")
+   escreval("Idade: ", idade, " anos.")
+   
+   //VERIFICANDO SE É APTO PARA TIRAR CARTEIRA
+   se(idade >= 18) entao
+        escreval("APTO A TIRAR A CARTEIRA!")
+   senao
+        escreval("INAPTO A TIRAR A CARTEIRA!")
+   fimse
+   escreval("-------------------------")
+
+fimalgoritmo
