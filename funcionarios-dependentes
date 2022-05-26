@@ -1,0 +1,27 @@
+algoritmo "DependentesFuncionarios" // quantidade de dependentes de um funcionario
+var
+    nome: caractere
+    sal, NovoSal: real
+    dep: inteiro
+inicio
+       escreva ("Qual o nome do funcionario? ")
+       leia(nome)
+       escreva ("Qual o salario do funcionario? R$")
+       leia(sal)
+       escreva ("Qual eh a quantidade de dependentes? ")
+       leia(dep)
+       
+       //selecionar quantidade de dependentes dos funcionarios
+       escolha(dep)
+                caso 0
+                      NovoSal <- sal + (sal*(5/100)) //taxa de 5%
+                caso 1, 2, 3
+                       NovoSal <- sal + (sal*(10/100)) //taxa de 10%
+                caso 4, 5, 6
+                       NovoSal <- sal + (sal*(15/100)) //taxa de 15%
+                OutroCaso
+                       NovoSal <- sal + (sal*(18/100)) //taxa de 18%
+                FimEscolha
+       //resultado
+        escreval("O novo salario de ", nome, " sera de R$", NovoSal :5:2)
+fimalgoritmo
