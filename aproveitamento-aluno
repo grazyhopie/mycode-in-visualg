@@ -12,51 +12,52 @@
 
 algoritmo "AproveitamentoAluno"
 var
+   nota1, nota2, media: real
 
 inicio
+   escreval("------------------------")
+   escreval("ESCOLA DE FAZER MEDIA AF")
+   escreval("------------------------")
+
+   //solicitar dados
+   escreva("Digite a Primeira nota: ")
+   leia(nota1)
+   escreva("Digite a Segunda nota: ")
+   leia(nota2)
+
+   //calculando a media
+   escreval("------------------------")
+   media <- ((nota1 + nota2) / 2)
+
+   //mostrando a media
+
+   escreva("A media eh ", media :5:2)
+
+   //definindo aproveitamento do aluno
+   se (media >= 10) ou (media >= 9) entao
+      escreva(" A ")
       escreval("------------------------")
-      escreval("ESCOLA DE FAZER MEDIA AF")
-      escreval("------------------------")
-      
-      //solicitar dados
-      escreva("Digite a Primeira nota: ")
-      leia(nota1)
-      escreva("Digite a Segunda nota: ")
-      leia(nota2)
-      
-      //calculando a media
-      escreval("------------------------")
-      media <- ((nota1 + nota2) / 2)
-      
-      //mostrando a media
-      
-      escreva("A media eh ", media :5:2)
-      
-      //definindo aproveitamento do aluno
-         se (media >= 10) ou (media >= 9) entao
-                  escreva(" A ")
+      se (media = 8.9) ou (media = 8.0) entao
+         escreva(" B ")
+         escreval("------------------------")
+         se (media = 7.9) ou (media = 7.0) entao
+            escreva(" C ")
+            escreval("------------------------")
+            se (media = 6.9) ou (media = 6.0) entao
+               escreva(" D ")
+               escreval("------------------------")
+               se (media = 5.9) ou (media = 5.0) entao
+                  escreva(" E ")
                   escreval("------------------------")
-             se (media = 8.9) ou (media = 8.0) entao
-                      escreva(" B ")
-                      escreval("------------------------")
-                   se (media = 7.9) ou (media = 7.0) entao
-                               escreva(" C ")
-                               escreval("------------------------")
-                         se (media = 6.9) ou (media = 6.0) entao
-                                   escreva(" D ")
-                                   escreval("------------------------")
-                                se (media = 5.9) ou (media = 5.0) entao
-                                          escreva(" E ")
-                                          escreval("------------------------")
-                                     senao
-                                           escreva(" F ")
-                                           escreval("------------------------")
-             fimse
-           fimse
+               senao
+                  escreva(" F ")
+                  escreval("------------------------")
+               fimse
+            fimse
          fimse
       fimse
    fimse
-fimse
 
-                   
+
+
 fimalgoritmo
