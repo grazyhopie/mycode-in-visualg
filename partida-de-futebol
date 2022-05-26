@@ -1,0 +1,40 @@
+// | diferença de gols | status         |
+// |  até 3            | partida normal |
+// |  mais de 5        | goleada        |
+// |  0                | empate         |
+
+
+
+algoritmo "PartidaDeFutebol"
+var
+   gol1, gol2, diferenca: inteiro
+inicio
+   escreval("BANGU X MADUREIRA")
+
+   escreval("----------------------")
+   escreva("Quanto gols de BANGU? ")
+   leia(gol1)
+   escreva("Quanto gols de MADUREIRA? ")
+   leia(gol2)
+
+   //calculando diferença de gols
+   diferenca <- (gol1 - gol2)
+
+   //MOSTRANDO DIFERENÇA
+   escreval("------------------")
+   escreval("DIFERENCA: ", diferenca)
+
+   //verficando status
+   escolha(diferenca)
+   caso 1, 2, 3
+      escreva("STATUS: PARTIDA NORMAL")
+   caso 0
+      escreva("STATUS: EMPATE")
+   fimescolha
+
+
+   se (diferenca > 3) entao
+      escreva("STATUS: GOLEADA")
+   fimse
+
+fimalgoritmo
