@@ -1,0 +1,62 @@
+// aproveitamento de um aluno: fazer media de duas notas
+// de um aluno e no final mostrar classificação do aluno de acordo
+// coma tabela:
+// | nota | classificação em numeros |
+// | A    |     10 - 9.0             |
+// | B    |   8.9 - 8.0              |
+// | C    |   7.9 - 7.0              |
+// | D    |   6.9 - 6.0              |
+// | E    |   5.90 - 5.0             |
+// | F    |  Abaixo de 5.0           |
+
+
+algoritmo "AproveitamentoAluno"
+var
+
+inicio
+      escreval("------------------------")
+      escreval("ESCOLA DE FAZER MEDIA AF")
+      escreval("------------------------")
+      
+      //solicitar dados
+      escreva("Digite a Primeira nota: ")
+      leia(nota1)
+      escreva("Digite a Segunda nota: ")
+      leia(nota2)
+      
+      //calculando a media
+      escreval("------------------------")
+      media <- ((nota1 + nota2) / 2)
+      
+      //mostrando a media
+      
+      escreva("A media eh ", media :5:2)
+      
+      //definindo aproveitamento do aluno
+         se (media >= 10) ou (media >= 9) entao
+                  escreva(" A ")
+                  escreval("------------------------")
+             se (media = 8.9) ou (media = 8.0) entao
+                      escreva(" B ")
+                      escreval("------------------------")
+                   se (media = 7.9) ou (media = 7.0) entao
+                               escreva(" C ")
+                               escreval("------------------------")
+                         se (media = 6.9) ou (media = 6.0) entao
+                                   escreva(" D ")
+                                   escreval("------------------------")
+                                se (media = 5.9) ou (media = 5.0) entao
+                                          escreva(" E ")
+                                          escreval("------------------------")
+                                     senao
+                                           escreva(" F ")
+                                           escreval("------------------------")
+             fimse
+           fimse
+         fimse
+      fimse
+   fimse
+fimse
+
+                   
+fimalgoritmo
