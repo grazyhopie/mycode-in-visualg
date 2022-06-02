@@ -1,0 +1,15 @@
+algoritmo "conversorDeMoedas" // passar de real para dolar
+var
+  R, D: real
+inicio
+   //solicitar valor em real
+   escreva("Qual o valor em R$? ")
+   leia(R)
+   
+   //conversão para dolar
+   D <- R/2.20
+   
+   //resultado
+   escreva("O valor convertido eh U$", D:5:2)
+
+fimalgoritmo
