@@ -1,0 +1,14 @@
+algoritmo "ConteAteOndeUsuarioQuiser"
+// o programa irá contar(de forma crescente) até um número que for digitado pelo usuario
+var
+  valor, contador: inteiro
+inicio
+  contador <- 0
+  escreval("quer contar ate quanto? ")
+  leia(valor)
+  enquanto (contador <= valor) faca
+           escreval(contador)
+           contador <- contador + 1
+  fimenquanto
+           escreval("terminei de contar")
+fimalgoritmo
