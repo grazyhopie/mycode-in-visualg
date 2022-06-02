@@ -1,0 +1,16 @@
+algoritmo "SomadorNumerico" // o usuario irá digitar um valor e
+// o programa ira contar até o valor digitado pelo usuario
+//no final os valores inseridos serão todos somados
+var
+   cont, V, S: inteiro
+inicio
+   cont <- 1 //inicio do contador
+   S <- 0    // inicio da soma
+   enquanto (cont <= 5) faca
+            escreva("Digite o", cont,  "o. valor: ")//solicitar os valores
+            leia (V)
+            S <- S + V //fazer soma de todos os valores
+            cont <- cont + 1
+   fimenquanto
+            escreval("a soma de todos os valores foi", S)
+fimalgoritmo
