@@ -7,10 +7,14 @@ var
   valor, salto, contador: inteiro
 inicio
   contador <- 0
+  //inserir dados(antes do enquanto, pois se colocar dentro do enquanto
+  // vai ficar repetindo essas perguntas a vida toda)
   escreval("quer contar ate quanto? ")
   leia(valor)
   escreval("qual sera o valor do salto? ")
   leia(salto)
+  
+  // contando...
   enquanto (contador <= valor) faca
            escreval(contador)
            contador <- contador + salto
