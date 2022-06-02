@@ -1,0 +1,19 @@
+algoritmo "ConteAteOndeUsuarioQuiser"
+// o programa irá contar(crescente) até um número
+//que for digitado pelo usuario e
+// passara a exibir numeros com intervalos(saltos) também
+//definidos pelo usuario
+var
+  valor, salto, contador: inteiro
+inicio
+  contador <- 0
+  escreval("quer contar ate quanto? ")
+  leia(valor)
+  escreval("qual sera o valor do salto? ")
+  leia(salto)
+  enquanto (contador <= valor) faca
+           escreval(contador)
+           contador <- contador + salto
+  fimenquanto
+           escreval("terminei de contar")
+fimalgoritmo
