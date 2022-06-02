@@ -1,0 +1,21 @@
+algoritmo "conversorDeMoedas" // solicitar quantas conversões serão 
+// realizadas, o valor em real e passar de real para dolar 
+var
+   R, D: real
+   C, Quant: inteiro
+inicio
+   C <- 1
+   escreva("Deseja realizar quantas conversões? ")
+   leia(Quant)
+   
+   enquanto (C <= Quant) faca
+      escreva("Qual o valor em R$? ")
+      leia(R)
+
+      D <- R/2.20 //conversão para dolar
+
+      escreval("O valor convertido eh U$", D:5:2)
+      C <- C + 1
+   fimenquanto
+
+fimalgoritmo
