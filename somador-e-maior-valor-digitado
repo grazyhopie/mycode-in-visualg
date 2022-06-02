@@ -1,5 +1,4 @@
-algoritmo "SomadorNumerico" // o usuario irá digitar um valor,
-// o programa ira contar até o valor digitado pelo usuario,
+algoritmo "SomadorNumerico" // o usuario irá digitar varios valores,
 //no final os valores inseridos serão todos somados e será
 //exibido o maior valor digitado
 var
