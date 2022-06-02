@@ -1,0 +1,16 @@
+algoritmo "conversorDeMoedas" // passar de real para dolar 4 vezes
+var
+   R, D, C: real
+inicio
+   C <- 1
+   enquanto (C <= 4) faca
+      escreva("Qual o valor em R$? ") //solicitar valor em real
+      leia(R)
+
+      D <- R/2.20 //conversão para dolar
+
+      escreval("O valor convertido eh U$", D:5:2)  //resultado
+      C <- C + 1
+   fimenquanto
+
+fimalgoritmo
