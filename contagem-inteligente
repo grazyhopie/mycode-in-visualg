@@ -1,0 +1,34 @@
+algoritmo "Contagem_inteligente"// se o menor valor estiver no inicio
+// faz uma contagem progressiva(crescente), se não faz uma contagem
+// regressiva (decrescente)
+var
+   i, f: inteiro
+   cont: inteiro
+inicio
+   escreval("CONTAGEM INTELIGENTE")
+   escreval("--------------------")
+
+   escreva("Inicio: ")
+   leia(i)
+   escreva("Fim: ")
+   leia(f)
+
+   escreval("--------------------")
+   escreval("C O N T A N D O")
+   escreval("--------------------")
+
+   se i < f entao
+      cont <- 1
+      enquanto (cont <= f) faca
+         escreval(cont)
+         cont <- cont + 1
+      fimenquanto
+   senao
+      enquanto (cont >= f) faca
+         escreval(cont)
+         cont <- cont - 1
+      fimenquanto
+   fimse
+
+
+fimalgoritmo
