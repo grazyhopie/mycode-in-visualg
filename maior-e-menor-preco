@@ -1,0 +1,34 @@
+algoritmo "maior-e-menor-preco"//Faça um aplicativo que leia o preço de 8 produtos.
+// No final, mostre na tela qual foi o
+// maior e qual foi o menor preço digitados
+var
+   contador: inteiro
+   maior, menor, p: real
+inicio
+   contador <- 1
+
+   enquanto (contador <= 8) faca
+      escreva("Preço do ", contador, "ºproduto: ")
+      leia(p)
+
+      se (contador = 1) entao
+         menor <- p
+         maior <- p
+      senao
+         se (p > maior) entao
+            maior <- p
+         senao
+            se (p < menor) entao
+               menor <- p
+            fimse
+         fimse
+      fimse
+
+      contador <- contador + 1
+   fimenquanto
+
+   escreval("O maior preco digitado foi esse: ", maior:1:2)
+   escreval("O menor preco digitado foi esse: ", menor:1:2)
+
+
+fimalgoritmo
