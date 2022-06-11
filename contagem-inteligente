@@ -3,32 +3,32 @@ algoritmo "Contagem_inteligente"// se o menor valor estiver no inicio
 // regressiva (decrescente)
 var
    i, f: inteiro
-   cont: inteiro
 inicio
+   i <- 0
+   f <- 0
+
    escreval("CONTAGEM INTELIGENTE")
    escreval("--------------------")
 
+   //solicitando valores
    escreva("Inicio: ")
    leia(i)
    escreva("Fim: ")
    leia(f)
 
-   escreval("--------------------")
-   escreval("C O N T A N D O")
-   escreval("--------------------")
-
-   se i < f entao
-      cont <- 1
-      enquanto (cont <= f) faca
-         escreval(cont)
-         cont <- cont + 1
+   //contadores
+   se (i < f) entao
+      enquanto (i < f) faca
+         escreval(i, "...")
+         i <- i + 1
       fimenquanto
    senao
-      enquanto (cont >= f) faca
-         escreval(cont)
-         cont <- cont - 1
-      fimenquanto
+      se (i > f) entao
+         enquanto (i > f) faca
+            escreval(i, "...")
+            i <- i - 1
+         fimenquanto
+      fimse
    fimse
-
 
 fimalgoritmo
