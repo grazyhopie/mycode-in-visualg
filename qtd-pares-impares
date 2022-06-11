@@ -1,0 +1,30 @@
+algoritmo "qtd-pares-impares"// Crie um programa que leia 6 números inteiros
+// e no final mostre quantos deles são pares e quantos são ímpares
+var
+   contador, v: inteiro
+   NumPar, NumImpar: inteiro
+inicio
+   contador <- 1
+   NumPar <- 0
+   NumImpar <- 0
+
+   enquanto ( contador <= 6) faca
+      escreva("Digite um valor: ")
+      leia(v)
+
+      se ( v mod 2 = 0) entao //verificando se são pares
+         v <- NumPar
+         Numpar <- Numpar + 1 //verificando quantos valores são pares
+      senao
+         v <- NumImpar
+         NumImpar <- NumImpar + 1 //verificando quantos valores são impares
+      fimse
+      
+      contador <- contador + 1
+   fimenquanto
+
+   //mostrando quantos deles são pares e impares
+   escreval("A quantidade de numeros pares eh: ", NumPar)
+   escreval("A quantidade de numeros impares eh: ", NumImpar)
+
+fimalgoritmo
