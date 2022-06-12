@@ -1,0 +1,52 @@
+algoritmo "atividade54" //Desenvolva um aplicativo que leia o peso
+// e a altura de 7 pessoas, mostrando no final:
+//a) Qual foi a média de altura do grupo
+//b) Quantas pessoas pesam mais de 90Kg
+//c) Quantas pessoas que pesam menos de 50Kg tem menos de 1.60m
+//d) Quantas pessoas que medem mais de 1.90m pesam mais de 100Kg.
+var
+   contador: inteiro
+   peso, altura, mediaAltura, SomaAltura: real
+   MaisDeNoven, MenosDe, MaisDe: real
+inicio
+   contador <- 1
+   MaisDeNoven <- 0
+   MenosDe <- 0
+   MaisDe <- 0
+
+   enquanto (contador <= 7) faca
+      escreva("Digite seu peso(KG): ")
+      leia(peso)
+      
+      escreva("Digite sua altura(M): ")
+      leia(altura)
+
+      SomaAltura <- SomaAltura + altura
+      mediaAltura <- (SomaAltura / 7)
+
+      se (peso > 90) entao
+         MaisDeNoven <- peso
+         MaisDeNoven <- MaisDeNoven + 1
+      fimse
+
+      se (peso < 50) e (altura < 1.60) entao
+         MenosDe <- peso
+         MenosDe <- altura
+         MenosDe <- MenosDe + 1
+      fimse
+
+      se (peso > 100) e (altura > 1.90) entao
+         MaisDe <- peso
+         MaisDe <- altura
+         MaisDe <- MenosDe + 1
+      fimse
+
+      contador <- contador + 1
+   fimenquanto
+   
+   escreval("Media de altura do grupo: ", mediaAltura:1:2)
+   escreval("Quantidade de pessoas com mais de 90KG: ", MaisDeNoven)
+   escreval("Quantidade de pessoas com menos de 50KG e menos de 1.60m: ", MenosDe)
+   escreval("Quantidade de pessoas com mais de 100KG e mais de 1.90m: ", MaisDe)
+
+fimalgoritmo
