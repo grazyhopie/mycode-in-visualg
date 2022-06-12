@@ -1,0 +1,32 @@
+algoritmo "melhor-aluno-da-turma"// pergunte quantos alunos tem em uma turma, a
+// partir dai pergunte qual o nome e a nota dos alunos e no final mostre o
+// aluno com a melhor nota
+var
+   contador, qtdAlunos: inteiro
+   nome: caractere
+   nota, MaiorNota: real
+inicio
+   contador <- 1
+
+   escreva("Quantos alunos a turma tem? ")
+   leia(qtdAlunos)
+   escreval("-----------------")
+
+   enquanto (contador <= qtdAlunos) faca
+      escreval("ALUNO", contador)
+      escreva("Nome do aluno: ")
+      leia(nome)
+      escreva("Nota de ", nome, ": ")
+      leia(nota)
+      escreval("-----------------")
+
+      se (nota > MaiorNota) entao
+         MaiorNota <- nota
+      fimse
+      
+      contador <- contador + 1
+   fimenquanto
+   
+   escreval("A melhor nota foi: ", MaiorNota:1:2)
+   
+fimalgoritmo
