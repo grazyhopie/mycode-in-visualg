@@ -1,0 +1,16 @@
+algoritmo "numero-primo"// faça um programa que leia um número inteiro e diga
+// se ele é primo ou não. Obs: Um número primo é aquele que é divisivel somente
+// por 1 e ele mesmo.
+var
+   Num: inteiro
+inicio
+   escreva("Digite um numero: ")
+   leia(Num)
+
+   se (Num mod 1 = 0) e (Num mod Num = 0) entao
+      escreval(Num, " eh primo! ")
+   senao
+      escreval(Num, " nao eh primo! ")
+   fimse
+
+fimalgoritmo
