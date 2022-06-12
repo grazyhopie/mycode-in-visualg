@@ -1,0 +1,57 @@
+"atividade53"//Faça um programa que leia a idade e o sexo
+// de 5 pessoas, mostrando no final:
+//a) Quantos homens foram cadastrados
+//b) Quantas mulheres foram cadastradas
+//c) A média de idade do grupo
+//d) A média de idade dos homens
+//e) Quantas mulheres tem mais de 20 anos
+var
+   contador, idade, total: inteiro
+   sexo: caracter
+   H, M, qtdHomem, qtdMulher, MaisDeVinte: inteiro
+   mediaGrupo: real
+inicio
+   contador <- 1
+   qtdMulher <- 0
+   qtdHomem <- 0
+   MaisDeVinte <- 0
+
+   enquanto (contador <= 5) faca
+      escreva("Digite sua idade: ")
+      leia(idade)
+
+      escreva("Digite seu sexo(H-homem ou M-mulher): ")
+      leia(sexo)
+
+      escolha (sexo)
+      caso "H"
+         H <- qtdHomem
+         qtdHomem <- H
+         H <- H + 1
+      caso "M"
+         M <- qtdMulher
+         qtdMulher <- M
+         M <- M + 1
+      fimescolha
+
+      se (sexo = M) e (idade > 20) entao
+         escreval(MaisDeVinte)
+         MaisDeVinte <- MaisDeVinte + 1
+      fimse
+
+      total <- total + idade
+      mediaGrupo <- (total / 5)
+
+
+      contador <- contador + 1
+   fimenquanto
+   
+   escreval("Quantidade de homens cadastrados: ", qtdHomem)
+   escreval("Quantidade de mulheres cadastradas: ", qtdMulher)
+   escreval("Media de idade do grupo: ", mediaGrupo)
+  //  escreval("Media de idades dos homens: ", ...  ) ajustar!
+  escreval("Quantidade de mulheres com mais de 20 anos: ", MaisDeVinte)
+  
+
+
+fimalgoritmo
