@@ -1,0 +1,46 @@
+algoritmo "atividade52"//Crie um algoritmo que leia a idade de 10 pessoas,
+//mostrando no final:
+//a) Qual é a média de idade do grupo
+//b) Quantas pessoas tem mais de 18 anos
+//c) Quantas pessoas tem menos de 5 anos
+//d) Qual foi a maior idade lida
+var
+   contador, idade, soma: inteiro
+   MenosCinco, MaisDezoito, MaiorIdade: inteiro
+   media: real
+inicio
+   contador <- 1
+   soma <- 0
+   MaisDezoito <- 0
+   MenosCinco <- 0
+
+   enquanto (contador <= 10) faca
+      escreva("Digite sua idade: ")
+      leia(idade)
+
+      soma <- soma + idade // somatorio de todas as idades
+      media <- (soma / 10)
+
+      se (idade >= 18) entao // verificando quantas pessoas tem mais de 18
+          idade <- MaisDezoito
+          MaisDezoito <- MaisDezoito + 1
+      fimse
+
+      se (idade < 5) entao // verificando quantas pessoas tem menos de 5
+          idade <- MenosCinco
+          MenosCinco <- MenosCinco + 1
+      fimse
+
+      se (idade > MaiorIdade) entao
+          MaiorIdade <- idade
+      fimse
+
+      contador <- contador + 1
+   fimenquanto
+   
+   escreval("Media de idade do grupo: ", media)
+   escreval("Quantidade de pessoas que tem mais de 18 anos: ", MaisDezoito)
+   escreval("Quantidade de pessoas que tem menos de 5 anos: ", MenosCinco)
+   escreval("Maior idade digitada: ", MaiorIdade)
+   
+fimalgoritmo
