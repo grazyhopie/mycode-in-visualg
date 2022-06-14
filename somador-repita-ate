@@ -1,0 +1,17 @@
+Algoritmo "somador-repita-ate"
+Var
+   v, s: inteiro
+   resp: caractere
+Inicio
+   s <- 0
+   Repita
+      escreva("Digite um valor ==> ")
+      leia(v)
+      s <- s + v
+      escreva("voce quer continuar? [s/n] ")
+      leia(resp)
+   Ate (resp = "n")
+   escreval("a soma de todos os valores e ", s)
+
+
+Fimalgoritmo
