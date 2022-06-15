@@ -1,0 +1,16 @@
+algoritmo "tabuada"
+var
+    n, contador, r: inteiro
+inicio
+    contador <- 1
+    
+    escreval("Deseja saber a tabuada de qual numero? ")
+    leia(n)
+    
+    repita
+    r <- n * contador
+    escreval(n, " x ", contador, " = ", r)
+    contador <- contador + 1
+    ate (contador > 10)
+   
+fimalgoritmo
