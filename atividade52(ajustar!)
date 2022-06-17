@@ -22,12 +22,10 @@ inicio
       media <- (soma / 10)
 
       se (idade >= 18) entao // verificando quantas pessoas tem mais de 18
-          idade <- MaisDezoito
           MaisDezoito <- MaisDezoito + 1
       fimse
 
       se (idade < 5) entao // verificando quantas pessoas tem menos de 5
-          idade <- MenosCinco
           MenosCinco <- MenosCinco + 1
       fimse
 
