@@ -1,4 +1,4 @@
-algoritmo "fatorial"
+algoritmo "fatorial" // fazer fatorial de um número
 var
   contador, n, fat: inteiro
 inicio
