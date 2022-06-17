@@ -1,0 +1,20 @@
+Algoritmo "total-negativos"
+
+Var
+    n, contador, TotNeg: inteiro
+Inicio
+   contador <- 1
+   TotNeg <- 0
+   repita
+   escreva("Digite um numero: ")
+   leia(n)
+   
+   se (n < 0) entao
+   TotNeg <- TotNeg + 1
+   fimse
+   
+   contador <- contador + 1
+   ate (contador > 5)
+   
+   escreval("Foram digitados ", TotNeg, " valores negativos.")
+Fimalgoritmo
