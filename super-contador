@@ -1,0 +1,44 @@
+algoritmo "super-contador" // ao digitar 1 vai aparecer uma contagem de 1 a 10,
+// ao digitar 2 vai aparecer uma contagem de 10 ate 1 e ao digitar 3 vai
+// aparecer "saindo"
+var
+   contador: inteiro
+   op: inteiro
+   resposta: caractere
+
+inicio
+
+   repita
+      escreval( "=============")
+      escreval(" M E N U ")
+      escreval( "=============")
+      escreval( "[1] De 1 a 10")
+      escreval( "[2] De 10 a 1")
+      escreval( "[3] Sair ")
+      escreval( "=============")
+      escreval("Digite uma opcao: ")
+      leia(op)
+
+      escolha op
+      caso 1
+         contador <- 1
+         repita
+            escreva(contador, "...")
+            contador <- contador + 1
+         ate (contador  > 10)
+
+      caso 2
+         contador <- 10
+         repita
+            escreva(contador, "...")
+            contador <- contador - 1
+         ate (contador  < 1)
+
+      caso 3
+         escreva("SAINDO...")
+      fimescolha
+      
+      escreval
+      escreva("Deseja continuar? [S/N] ")
+      leia(resposta)
+   ate (resposta = "N")
