@@ -1,0 +1,19 @@
+algoritmo "fatorial"
+var
+  contador, n, fat: inteiro
+inicio
+  escreva("Digite um numero: ")
+  leia(n)
+  
+  contador <- n
+  fat <- 1
+  
+  repita
+  fat <- fat * contador
+  
+  contador <- contador + 1
+  ate (contador < 1)
+  
+  escreva("O valor do fatorial de ", n, " eh igual a ", f)
+  
+  fimalgoritmo
