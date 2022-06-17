@@ -1,0 +1,26 @@
+algoritmo "fatorial" // fazer fatorial de um número, quantas vezes o usuario quiser
+// ate ele dizer "não"
+var
+  contador, n, fat: inteiro
+  resposta: caractere
+inicio
+repita
+  escreva("Digite um numero: ")
+  leia(n)
+  
+  contador <- n
+  fat <- 1
+  
+  repita
+  fat <- fat * contador
+  
+  contador <- contador + 1
+  ate (contador < 1)
+  
+  escreval("O valor do fatorial de ", n, " eh igual a ", f)
+  escreva("Quer continuar? [S/N] ")
+  leia(resposta)
+  limpatela
+ ate (resposta = "N")
+ 
+  fimalgoritmo
