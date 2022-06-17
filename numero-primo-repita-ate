@@ -1,0 +1,22 @@
+algoritmo "NumeroPrimo"
+var
+  contador, n, ContDiv: inteiro
+ inicio
+  contador <- 1
+  ContDiv <- 0
+  escreva("Digite um numero: ")
+  leia(n)
+      repita
+           se (n % contador = 0) entao
+               ContDiv <- ContDiv + 1
+           fimse
+           contador <- contador + 1
+       ate (contador > n)
+
+       se (ContDiv > 2) entao
+            escreval("O numero ", n, " nao é primo! ")
+       senao
+            escreval("O numero ", n, " eh primo! ")
+       fimse
+
+ fimalgoritmo
