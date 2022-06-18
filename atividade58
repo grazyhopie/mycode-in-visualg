@@ -1,0 +1,23 @@
+algoritmo "atividade-58"//Faça um algoritmo que leia a idade de vários alunos
+// de uma turma. O programa vai parar quando for digitada a idade 999.
+// No final, mostre quantos alunos existem na turma e qual é a média
+// de idade do grupo
+var
+   idade, s, TotalAlunos: inteiro
+   media: real
+inicio
+   repita
+   escreva("Digite sua idade: ")
+   leia(idade)
+   
+   TotalAlunos <- TotalAlunos + 1
+   s <- s + idade
+   media <- (s / TotalAlunos)
+   
+   ate (idade = 999)
+   limpatela
+   
+   escreval(" Existem ", TotalAlunos, " alunos ")
+   escreval("Media de idade da turma: ", media:1:2)
+   
+fimalgoritmo
