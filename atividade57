@@ -32,3 +32,5 @@ inicio
    
    escreval("Total pago aos homens: ", TotalSalHom)
    escreval("Total pago as mulheres: ", TotalSalMulh)
+   
+  fimalgoritmo
