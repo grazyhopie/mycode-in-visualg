@@ -1,0 +1,48 @@
+algoritmo "escolhendo-pessoas"//o programa vai  perguntar o sexo[M/F],
+//a idade e a cor do cabelo(preto, castanho, loiro, ruivo) até o usuario dizer
+//que não quer mais continuar . No final mostrar total de homems com mais de 18
+// com cabelo castanho e total de mulheres entre 25 e 30 anos com cabelo loiro
+var
+   sexo, resposta: caractere
+   idade, op, TotalMul, TotalHom: inteiro
+inicio
+   repita
+      escreval("====================")
+      escreval("SELETOR DE PESSOAS")
+      escreval("====================")
+
+      escreva("Qual o sexo? [M/F] ")
+      leia(sexo)
+
+      escreva("Qual a idade? ")
+      leia(idade)
+
+      escreval("Qual a cor do cabelo? ")
+      escreval("-----------------------")
+      escreval(" [1] Preto ")
+      escreval(" [2] Castanho ")
+      escreval(" [3] Loiro ")
+      escreval(" [4] Ruivo ")
+      leia(op)
+      
+        se (sexo = "M") e (idade >= 18) e (op = 2) entao
+      TotalHom <- TotalHom + 1
+   fimse
+
+   se ((sexo = "F") e ((25 >= idade) e (idade <= 30)) e (op = 3)) entao
+      TotalMul <- TotalMul + 1
+   fimse
+
+      escreval
+      escreval("Quer continuar? [S/N] ")
+      leia(resposta)
+      limpatela
+   ate(resposta = "N")
+   
+  escreval("RESULTADO FINAL " )
+  escreval("--------------------------")
+  escreval("Total de homems com mais de 18 com cabelo castanho ", TotalHom)
+  escreval("Total de mulheres entre 25 e 30 anos com cabelo loiro ",TotalMul)
+  
+  
+  fimalgoritmo
