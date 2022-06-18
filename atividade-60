@@ -1,0 +1,70 @@
+algoritmo "atividade-60"//Desenvolva um algoritmo que leia o nome, a idade
+// e o sexo de várias pessoas.
+//O programa vai perguntar se o usuário quer ou não continuar.
+// No final, mostre:
+//a) O nome da pessoa mais velha
+//b) O nome da mulher mais jovem
+//c) A média de idade do grupo
+//d) Quantos homens tem mais de 30 anos
+//e) Quantas mulheres tem menos de 18 anos
+var
+   nome, resposta, sexo, NomeMaisVelha, NomeMaisJovem: caractere
+   idade, maior, MenorIdadeMulher, QtdMulher, QtdHomem: inteiro
+   IdadeMaisDeTrintaM, MenosDezoitoF, SomaQtdHomem_Mulher, s: inteiro
+   MediaTotal: real
+inicio
+   repita
+      escreva("Nome: ")
+      leia(nome)
+
+      escreva("Idade: ")
+      leia(idade)
+
+      escreva("Sexo[M/F]: ")
+      leia(sexo)
+
+      se (idade > maior) entao
+         maior <- idade
+         NomeMaisVelha <- nome
+      fimse
+
+      se (sexo = "F") e ((idade < MenorIdadeMulher) ou (MenorIdadeMulher = 0)) entao
+         MenorIdadeMulher <- idade
+         NomeMaisJovem <- nome
+      fimse
+
+      se (sexo = "F") entao
+         QtdMulher <- QtdMulher + 1
+      fimse
+
+      se (sexo = "M") entao
+         QtdHomem <- QtdHomem + 1
+      fimse
+
+      se (sexo = "M") e (idade >= 30) entao
+         IdadeMaisDeTrintaM <- IdadeMaisDeTrintaM + 1
+      fimse
+
+      se (sexo = "F") e (idade < 18) entao
+         MenosDezoitoF <- MenosDezoitoF + 1
+      fimse
+
+
+      SomaQtdHomem_Mulher <- QtdHomem + QtdMulher  // quantidade de homi e mulher
+      s <- s + idade  // soma de todas as idades
+      MediaTotal <- (s / SomaQtdHomem_Mulher) // media de idade do grupo
+
+      escreval
+      escreval("Quer continuar[S/N]? ")
+      leia(resposta)
+
+      limpatela
+   ate (resposta = "N")
+
+   escreval("Pessoa mais velha: ", NomeMaisVelha)
+   escreval("Mulher mais jovem: ", NomeMaisJovem)
+   escreval("Media de idade: ", MediaTotal:1:2)
+   escreval("Homens com mais de 30 anos: ", IdadeMaisDeTrintaM)
+   escreval("Mulheres com menos de 18 anos: ", MenosDezoitoF)
+
+fimalgoritmo
